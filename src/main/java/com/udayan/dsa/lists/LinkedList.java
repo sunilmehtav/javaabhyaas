@@ -90,7 +90,7 @@ public class LinkedList {
 			System.out.print(temp.getValue()+ " -> ");
 			temp = temp.getNext();
 		}
-		System.out.print("null");
+		System.out.println("null\n");
 	}
 	public Node getHead() {
 		
@@ -102,8 +102,10 @@ public class LinkedList {
 		return tail;
 	}
 	
+	public void setLength(int length) {
+		this.length = length;
+	}
 	public int getLength() {
-		System.out.println("\nLength = "+length);
 		return length;
 	}
 	public void setHead(Node head) {
