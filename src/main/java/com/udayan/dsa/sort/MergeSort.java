@@ -36,7 +36,7 @@ public class MergeSort {
     public static int[] mergeSort(int[] array) {
         if (array.length == 1) return array;
 
-        int midIndex = array.length/2;
+        int midIndex = array.length / 2;
         int[] left = mergeSort(Arrays.copyOfRange(array, 0, midIndex));
         int[] right = mergeSort(Arrays.copyOfRange(array, midIndex, array.length));
 
@@ -46,13 +46,13 @@ public class MergeSort {
 
     public static void main(String[] args) {
 
-        int[] originalArray = {3,1,4,2};
+        int[] originalArray = {3, 1, 4, 2};
 
-        int [] sortedArray = mergeSort(originalArray);
+        int[] sortedArray = mergeSort(originalArray);
 
-        System.out.println( "\nOriginal Array: " + Arrays.toString( originalArray ) );
+        System.out.println("\nOriginal Array: " + Arrays.toString(originalArray));
 
-        System.out.println( "\nSorted Array: " + Arrays.toString( sortedArray ) );
+        System.out.println("\nSorted Array: " + Arrays.toString(sortedArray));
 
         /*
             EXPECTED OUTPUT:

@@ -1,7 +1,7 @@
 package com.udayan.dsa.graphs;
 
 public class Main {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
         Graph myGraph = new Graph();
 
@@ -23,5 +23,5 @@ public class Main {
         //myGraph.removeEdge("A", "B");
         myGraph.removeVertex("D");
         myGraph.printGraph();
-	}
+    }
 }
